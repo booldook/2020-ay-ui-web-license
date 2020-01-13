@@ -89,3 +89,15 @@
 })();
 
 
+/* Pager 형 */
+(function(){
+	var cnt = 4;
+	var now = 0;
+	var wid = 720;
+	$(".pager").click(function(){
+		now = $(this).index();
+		$(".pager").removeClass("active");
+		$(this).addClass("active");
+		$("#ban-wrap7").stop().animate({"left": -wid*now+"px"}, 300);
+	});
+})();

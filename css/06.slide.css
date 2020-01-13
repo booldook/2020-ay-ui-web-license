@@ -12,3 +12,6 @@ a:link, a:visited, a:hover, a:active {color: inherit;}
 
 .bts {position: absolute; bottom: 0; color: #fff; width: 100%; display: flex; justify-content: center;}
 .bts > div {padding: 8px; cursor: pointer;}
+
+.pager {font-size: 30px;}
+.pager.active {color: red;}
