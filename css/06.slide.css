@@ -1,0 +1,14 @@
+.wrapper {width: 720px; margin: 0 auto; height: 5000px;}
+a:link, a:visited, a:hover, a:active {color: inherit;}
+
+.bans {width: 100%; height: 322px; position: relative; overflow: hidden;}
+.ban-wrap {position: relative; display: flex;}
+.ban {flex: 720px 0 0;}
+
+#ban-wrap3, #ban-wrap4 {display: block;}
+
+#bans5 > .ban {position: absolute;}
+#bans5 > .ban:not(:first-child) {opacity :0;}
+
+.bts {position: absolute; bottom: 0; color: #fff; width: 100%; display: flex; justify-content: center;}
+.bts > div {padding: 8px; cursor: pointer;}
