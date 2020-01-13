@@ -1,0 +1,12 @@
+.wrapper {width: 1000px; margin: 0 auto;}
+
+.header-wrap {width: 100%; height: 100px; display: flex; justify-content: space-between; align-items: center; background-color: #eee;}
+.logo {width: 100px; text-align: center;}
+.navi-wrap {display: flex;}
+.navi {width: 120px; height: 60px; line-height: 60px; text-align: center;}
+
+
+
+.banner-wrap {width: 100%; height: 300px;}
+.cont-wrap {width: 100%; height: 300px;}
+.footer-wrap {width: 100%; height: 100px;}
