@@ -1,0 +1,11 @@
+.wrapper {width: 900px; margin: 0 auto;}
+.conts {display: flex; height: 200px;}
+.conts > div {padding: 12px; border: 1px solid red;}
+.tabs {flex: 40% 0 0;}
+.ads {flex: 30% 0 0;}
+.links {flex: 30% 0 0;}
+
+.tab-wrap {height: 36px; display: flex;}
+.tab {width: 100px; height: 36px; text-align: center; line-height: 36px; cursor: pointer; border: 1px solid #999; margin-right: 2px; background-color: #ddd;}
+.notice-tb {width: 100%; border: 1px solid #999; margin-top: -1px; font-size: 14px;}
+.notice-tb th,.notice-tb td {text-align: center; padding: 3px; border-bottom: 1px solid #999;}
