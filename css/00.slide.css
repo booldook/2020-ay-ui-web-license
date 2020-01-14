@@ -5,13 +5,10 @@ a:link, a:visited, a:hover, a:active {color: inherit;}
 .ban-wrap {position: relative; display: flex;}
 .ban {flex: 100% 0 0;}
 
-#ban-wrap3, #ban-wrap4 {display: block;}
-
-#bans5 > .ban {position: absolute;}
-#bans5 > .ban:not(:first-child) {opacity :0;}
-
-.bts {position: absolute; bottom: 0; color: #fff; width: 100%; display: flex; justify-content: center;}
-.bts > div {padding: 8px; cursor: pointer;}
-
-.pager {font-size: 30px;}
-.pager.active {color: red;}
+.bt-page {color: #fff; opacity: 0.3; transition: all 0.5s; font-size: 100px; line-height: 100px; position: absolute; top: calc(50% - 50px); cursor:pointer;}
+.bt-page:hover {opacity: 1; text-shadow: 0 0 10px rgba(0,0,0,0.3);}
+.prev {left: 20px;}
+.next {right: 20px;}
+.pagers {position: absolute; bottom: 0; width: 100%; display: flex; justify-content: center; font-size: 24px; color: #fff; cursor: pointer;}
+.pager {padding: 4px;}
+.pager.active {color: tomato;}
