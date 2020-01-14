@@ -11,3 +11,10 @@ $(".tab").click(function(){
 		$(".gallery-wrap").css({"display": "flex"});
 	}
 });
+
+$(".pop-link").click(function(){
+	$(".pops").css({"display": "flex"});
+});
+$(".pop-close").click(function(){
+	$(".pops").css({"display": "none"});
+});
