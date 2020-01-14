@@ -2,8 +2,9 @@
 a:link, a:visited, a:hover, a:active {color: inherit;}
 
 .bans {width: 100%; position: relative; overflow: hidden;}
-.ban-wrap {position: relative; display: flex;}
-.ban {flex: 100% 0 0;}
+#bans1 .ban-wrap {position: relative; display: flex;}
+#bans2 .ban-wrap {position: relative;}
+#bans1 .ban {flex: 100% 0 0;}
 
 .bt-page {color: #fff; opacity: 0.3; transition: all 0.5s; font-size: 100px; line-height: 100px; position: absolute; top: calc(50% - 50px); cursor:pointer;}
 .bt-page:hover {opacity: 1; text-shadow: 0 0 10px rgba(0,0,0,0.3);}

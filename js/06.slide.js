@@ -7,7 +7,7 @@
 	function slide() {
 		if(now == cnt) now = 0;
 		else now++;
-		$("#ban-wrap1").stop().animate({"left": -wid*now+"px"}, 500);
+		$("#ban-wrap1").stop().animate({"left": -720*now+"px"}, 500);
 	}
 })();
 
