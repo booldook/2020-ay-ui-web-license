@@ -25,21 +25,23 @@ function pagerMaker($parent) {
 		html += '<div class="pager">●</div>';
 	}
 	$parent.find(".pagers").html(html);
+	$parent.find(".pager").eq(0).addClass("active");
 }
 
 
 /* 무한반복형 */
 (function(){
 	var $bans = $("#bans1");
+	slideMaker($bans, true);
+	pagerMaker($bans);
 	var $ban = $bans.find(".ban-wrap");
 	var $prev = $bans.find(".prev");
 	var $next = $bans.find(".next");
+	var $pager = $bans.find(".pager");
 	var cnt = slides.length; //5
 	var now = 0;
 	var delay = 4000;
 	var speed = 300;
-	slideMaker($bans, true);
-	pagerMaker($bans);
 	var interval = setInterval(slide, delay);
 	function slide() {
 		if(now == cnt) {
@@ -51,11 +53,17 @@ function pagerMaker($parent) {
 	}
 	function ani() {
 		$ban.stop().animate({"left": -now*100+"%"}, speed);
+		pagerChg();
 	}
-	$ban.mouseenter(function(){
+	function pagerChg() {
+		$pager.removeClass("active");
+		if(now < cnt) $pager.eq(now).addClass("active");
+		else $pager.eq(0).addClass("active");
+	}
+	$bans.mouseenter(function(){
 		clearInterval(interval);
 	});
-	$ban.mouseleave(function(){
+	$bans.mouseleave(function(){
 		clearInterval(interval);
 		interval = setInterval(slide, delay);
 	});
@@ -70,6 +78,10 @@ function pagerMaker($parent) {
 			now++;
 			ani();
 		}
+	});
+	$pager.click(function(){
+		now = $(this).index();
+		ani();
 	});
 })();
 
